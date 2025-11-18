@@ -142,7 +142,7 @@ export default function App(){
             <p className="subtitle small">{TAGLINE}</p>
             <div className="cta">
               <a className="btn" href="#projects">View Projects</a>
-              <a className="btn secondary" href="/Hari CV.pdf" download>Download Resume</a>
+              <a className="btn secondary" href="/Hariharan_Resume.pdf" download>Download Resume</a>
             </div>
           </div>
 
