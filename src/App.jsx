@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com'
 
 
 const NAME = "HARIHARAN S"
-const TITLE = "Full Stack Developer | AI & Data Science Student"
+const TITLE = "AI Engineer | MERN Stack Developer | AI & Data Science Student"
 const TAGLINE = "Building scalable web applications powered by AI and modern web technologies."
 const EMAIL = "hariharansathasivam08@gmail.com"
 const GITHUB = "https://github.com/hariharan-875"
@@ -142,7 +142,7 @@ export default function App(){
             <p className="subtitle small">{TAGLINE}</p>
             <div className="cta">
               <a className="btn" href="#projects">View Projects</a>
-              <a className="btn secondary" href="/Hariharan_Resume.pdf" download>Download Resume</a>
+              <a className="btn secondary" href="/Hariharan_ResumeAI.pdf" download>Download Resume</a>
             </div>
           </div>
 
@@ -158,8 +158,8 @@ export default function App(){
           <div className="reveal">
             <h2>About</h2>
             <p className="small">
-              I’m an aspiring Full Stack Developer with a foundation in Artificial Intelligence and Data Science.
-              I specialize in building efficient, scalable web applications using React.js, Node.js, and Express.js.
+            I’m a B.Tech graduate in Artificial Intelligence & Data Science passionate about building intelligent applications and modern web solutions. I have hands-on experience in Python, Machine Learning, SQL, React.js, Node.js, MongoDB, and MySQL, with a growing focus on Generative AI, LLMs, RAG, and LangChain. I enjoy solving real-world problems by combining AI with scalable and user-friendly technologies.
+
             </p>
             <hr className="sep" />
             <p className="small">
@@ -177,19 +177,89 @@ export default function App(){
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className="section">
-        <div className="container">
-          <h2 className="reveal">Technical Skills</h2>
-          <div className="card-grid">
-            {['Python','JavaScript','React.js','Node.js','Express.js','HTML5','CSS3','MongoDB','MySQL','Firebase','Git','REST APIs'].map(s => (
-              <div className="card reveal" key={s}>
-                <h3>{s}</h3>
-                <p>Proficient in {s} development.</p>
-              </div>
-            ))}
-          </div>
+<section id="skills" className="section">
+  <div className="container">
+    <h2 className="reveal">Technical Skills</h2>
+
+    <div className="card-grid">
+      {[
+        {
+          name: 'Artificial Intelligence & Generative AI',
+          desc: 'Experience with LLMs, Generative AI, Prompt Engineering, Sentence-Transformer Embeddings, and NLP.'
+        },
+        {
+          name: 'Machine Learning',
+          desc: 'Experience with Scikit-learn, Regression, Classification, and Model Evaluation.'
+        },
+        {
+          name: 'Deep Learning & Computer Vision',
+          desc: 'Experience with TensorFlow, Keras, CNN, and OpenCV.'
+        },
+        {
+          name: 'Data Science',
+          desc: 'Experience with NumPy, Pandas, EDA, and Feature Engineering.'
+        },
+        {
+          name: 'Python',
+          desc: 'Proficient in Python development.'
+        },
+        {
+          name: 'SQL',
+          desc: 'Proficient in SQL and database development.'
+        },
+        {
+          name: 'JavaScript',
+          desc: 'Proficient in JavaScript development.'
+        },
+        {
+          name: 'React.js',
+          desc: 'Proficient in React.js development.'
+        },
+        {
+          name: 'Node.js',
+          desc: 'Proficient in Node.js development.'
+        },
+        {
+          name: 'Express.js',
+          desc: 'Proficient in Express.js development.'
+        },
+        {
+          name: 'HTML5',
+          desc: 'Proficient in HTML5 development.'
+        },
+        {
+          name: 'CSS3',
+          desc: 'Proficient in CSS3 development.'
+        },
+        {
+          name: 'MongoDB',
+          desc: 'Proficient in MongoDB development.'
+        },
+        {
+          name: 'MySQL',
+          desc: 'Proficient in MySQL development.'
+        },
+        {
+          name: 'Firebase',
+          desc: 'Proficient in Firebase development.'
+        },
+        {
+          name: 'REST APIs',
+          desc: 'Proficient in REST API development.'
+        },
+        {
+          name: 'Git & GitHub',
+          desc: 'Proficient in Git and GitHub for version control.'
+        }
+      ].map(skill => (
+        <div className="card reveal" key={skill.name}>
+          <h3>{skill.name}</h3>
+          <p>{skill.desc}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* PROJECTS */}
       <section id="projects" className="section">
@@ -237,8 +307,8 @@ export default function App(){
 
           <div className="card-grid">
             {[
-              { img: '/MAIN JS.jpg', title: 'HTML, CSS & JavaScript' },
               { img: '/PYTHON.jpg', title: 'Python Programming' },
+              { img: '/MAIN JS.jpg', title: 'HTML, CSS & JavaScript' },
               { img: '/REACT JS.jpg', title: 'React.js Development' },
               { img: '/NODE JS.jpg', title: 'Node.js & Express' },
               { img: '/SQL.jpg', title: 'SQL / MySQL' }
